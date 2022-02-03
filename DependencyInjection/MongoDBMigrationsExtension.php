@@ -41,10 +41,7 @@ class MongoDBMigrationsExtension extends Extension
         $loader->load('services.xml');
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function getAlias()
+    public function getAlias(): string
     {
         return 'mongo_db_migrations';
     }
